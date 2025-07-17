@@ -6,7 +6,7 @@ class Program3
     {
         int x = 10, y = 20;
 
-        Console.WriteLine("Program 3 [Relational and logical operators use]")
+        Console.WriteLine("Program 3 [Relational and logical operators use]");
         Console.WriteLine("x == y: " + (x == y));
         Console.WriteLine("x != y: " + (x != y));
         Console.WriteLine("x > y: " + (x > y));

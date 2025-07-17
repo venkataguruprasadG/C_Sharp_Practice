@@ -17,5 +17,9 @@ class Program
 
         Program3 obj2 = new Program3();
         obj2.logic();
+
+        Assignment1 obj3 = new Assignment1();
+        obj3.StudentDetails();
+        obj3.MarksCalculation();
     }
 }
