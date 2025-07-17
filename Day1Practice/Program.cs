@@ -14,5 +14,8 @@ class Program
 
         Program1 obj = new Program1();
         obj.operations();
+
+        Program3 obj2 = new Program3();
+        obj2.logic();
     }
 }
