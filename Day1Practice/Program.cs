@@ -11,5 +11,8 @@ class Program
         Console.WriteLine("Name: "+name);
         Console.WriteLine("Age: "+age);
         Console.WriteLine("Height: "+height);
+
+        Program1 obj = new Program1();
+        obj.operations();
     }
 }
