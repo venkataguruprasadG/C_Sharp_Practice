@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Net.Mail;
 
 class Program
 {
@@ -21,5 +22,17 @@ class Program
         Assignment1 obj3 = new Assignment1();
         obj3.StudentDetails();
         obj3.MarksCalculation();
+
+        StudentManager stm = new StudentManager();
+        stm.DisplayDefaultstudent();
+        
+        string summary = stm.GenerateStudentSummary("Ramu",30,"Btech");
+        Console.WriteLine(summary);
+
+        string result = stm.CalculateAverage(70,80,100);
+        Console.WriteLine(result);
+
+        stm.PrintDetails();
+        stm.PrintDetails("Data saved successfully");
     }
 }
