@@ -34,5 +34,8 @@ class Program
 
         stm.PrintDetails();
         stm.PrintDetails("Data saved successfully");
+
+        StudentGradeProcessor s = new StudentGradeProcessor();
+        s.Displayresult();
     }
 }
