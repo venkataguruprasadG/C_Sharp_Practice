@@ -37,5 +37,20 @@ class Program
 
         StudentGradeProcessor s = new StudentGradeProcessor();
         s.Displayresult();
+
+        Laptop lp = new Laptop("XYM",000000,16);
+        
+        Movie mv = new Movie("Interstellar", "Christopher Nolan", 169);
+        mv.DisplayDetails();
+
+        Rectangle rc = new Rectangle(20,20);
+        rc.CalculateArea();
+        rc.Calculateperimeter();
+        Console.WriteLine("Area: " + rc.CalculateArea());
+        Console.WriteLine("Perimeter: " + rc.Calculateperimeter());
+
+
+        Student stu = new Student("XYZ",98,90);
+        stu.Result();
     }
 }
