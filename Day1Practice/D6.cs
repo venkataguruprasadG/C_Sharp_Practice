@@ -1,6 +1,9 @@
 using System;
+using System.Formats.Asn1;
+using System.Security.Cryptography.X509Certificates;
 
-public class Car{
+public class Car
+{
     static Car()
     {
         Console.WriteLine("Welcome to car showroom");
@@ -15,7 +18,7 @@ public class Car{
     {
         Console.WriteLine($"Car Brand: {brand}. Price of the car: {price}");
     }
-
+}
     public class Book
     {
         public string? title;
@@ -27,7 +30,21 @@ public class Car{
             this.author=author;
             this.price=price;
 
-            Console.WriteLine($"")
+            Console.WriteLine($"Title of the book: {title}.Author of the book: {author}.Price of the book: {price}");
         }
+    }
+
+    public class Circle
+{
+    double radius;
+    
+    public Circle(double radius)
+    {
+        this.radius = radius;
+    }
+
+    public double CalculateArea()
+    {
+        return Math.PI * radius * radius;
     }
 }
