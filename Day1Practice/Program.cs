@@ -52,5 +52,24 @@ class Program
 
         Student stu = new Student("XYZ",98,90);
         stu.Result();
+
+        Employe emp = new Employe();
+        emp.Name = "Guru Prasad";
+        emp.Salary = 75000;
+        emp.DisplayInfo();
+
+        Console.WriteLine();
+
+        // Product class with object initializer
+        Product p = new Product { ProductName = "Laptop", Price = 65000 };
+        p.ShowProductDetails();
+
+        Console.WriteLine();
+
+        // Vehicle class with different constructors
+        Vehicle v1 = new Vehicle(); // Default constructor
+        Vehicle v2 = new Vehicle("Toyota"); // One parameter
+        Vehicle v3 = new Vehicle("Tesla", 2023); // Two parameters
+        v3.Display();
     }
 }
